@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./Amor.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>MINHA MENINA🤍</strong>
+                        <p>
+                            Tem horas que eu te olho, e sinto uma vontade imensa de gritar para o mundo o quanto eu te amo, o quanto sou feliz por ter você ao meu lado. Brinco contigo, dizendo o quanto você é sortuda por ter alguém como eu na sua vida, mas a verdade é que fui eu quem ganhou na loteria ao te encontrar. Sou imensamente grato por ter você em minha vida, por ter você vivendo dentro de mim. Às vezes, olho para você e peço a Deus em silêncio: Por favor, que seja para sempre, Eu Te amo!🤍! 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
